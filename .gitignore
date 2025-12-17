@@ -1,0 +1,41 @@
+#API Keys(絕對不要提交)
+.ei_api_key
+*.key
+*_key.txt
+api_keys/
+*.env
+
+#環境設定
+.env
+.env.local
+.env.*.local
+
+#暫存檔案
+*.tmp
+*.bak
+
+#models (binary)
+models/*.eim
+
+#Python
+_pycache_/
+*.pyc
+*.pyo
+
+#virtual env
+.venv/
+env/
+
+images/*
+results/*
+
+#OS
+.DS_Store
+Thumbs.db
+
+*.log
+
+#Edge Impulse data & outputs
+data/
+results/
+logs/
