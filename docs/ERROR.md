@@ -27,25 +27,25 @@ Git 為避免直接覆蓋他人內容，因此拒絕 push。
    ```bash
    cp -r edge_impulse_demo edge_impulse_demo_backup
    ```
-同步遠端最新版本
+2. **同步遠端最新版本**
 
 ```bash
 git pull origin main
 ```
-重新上傳
+3. **重新上傳**
 
 ```bash
 git push origin main
 ```
-錯誤二：Edge Impulse 指令無法使用
-常見現象
+## 錯誤二：Edge Impulse 指令無法使用
+### 常見現象
 ei 指令不存在
 
 教學中的指令無法執行
 
 CLI 行為與官方文件不一致
 
-問題原因
+### 問題原因
 Edge Impulse 在版本更新後，CLI 工具已拆分為多個獨立指令：
 
 edge-impulse-uploader
@@ -56,7 +56,7 @@ edge-impulse-daemon
 
 大量網路教學仍使用舊版 ei 指令，導致混淆。
 
-解決方式
+### 解決方式
 安裝最新版工具：
 
 ```bash
@@ -64,15 +64,15 @@ sudo npm install -g edge-impulse-cli edge-impulse-linux
 ```
 專案流程全面避免使用 ei 指令
 
-錯誤三：本地端無法透過 API 存取 Edge Impulse
-常見現象
+## 錯誤三：本地端無法透過 API 存取 Edge Impulse
+### 常見現象
 API 回傳 Cannot GET / Cannot POST
 
 curl 回傳 HTML
 
 jq 顯示 Invalid numeric literal
 
-問題原因
+### 問題原因
 使用不存在或非公開 API
 
 誤以為 Edge Impulse 支援 /jobs/{id} 查詢
@@ -81,7 +81,7 @@ jq 顯示 Invalid numeric literal
 
 環境變數未正確設定
 
-解決方式
+### 解決方式
 觸發訓練僅使用：
 
 ```bash
