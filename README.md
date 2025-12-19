@@ -12,9 +12,6 @@
 - 使用 Edge Impulse Public API 觸發模型 retrain
 - 自動監控訓練進度
 - 使用官方工具同步下載最新模型（model.eim）
-- Step 4 明確命名為 update（更新本地模型）
-- 支援 Unoptimized（float32）模型
-- 支援 Linux runner 與 Python inference
 
 ---
 
