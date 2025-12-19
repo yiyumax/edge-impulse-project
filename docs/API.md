@@ -20,14 +20,14 @@ https://studio.edgeimpulse.com/v1/api
     export PROJECT_ID=123456
 ```
 
-        `API 一覽（Pipeline 對應）
+        API 一覽（Pipeline 對應）
         Pipeline 步驟	API	用途
         Step 2	Upload API	上傳訓練資料
         Step 3	Retrain API	觸發模型訓練
         Step 3	Jobs API	查詢訓練狀態
         Step 4	Deployment API	下載最新模型`
 
-**1. 上傳訓練資料（Upload）**
+**1. 上傳訓練資料（Upload）**\
 本專案透過 edge-impulse-uploader CLI 上傳資料，該工具底層即呼叫官方 Upload API。
 
 實際使用方式
@@ -38,7 +38,7 @@ edge-impulse-uploader \
 ```
 此步驟由 upload_data.sh 封裝，不直接手動呼叫 API。
 
-**2. 觸發模型訓練（Retrain)**
+**2. 觸發模型訓練（Retrain)**\
 API Endpoint
 ```bash
 POST /{PROJECT_ID}/jobs/retrain
@@ -65,13 +65,13 @@ _Response 範例（成功）_
 }
 ```
 _說明_
->id 為 retrain job ID
->retrain 會觸發一連串子任務（features、training 等)
->此 API 為 唯一官方建議的自動化訓練入口
+>id 為 retrain job ID\
+>retrain 會觸發一連串子任務（features、training 等)\
+>此 API 為 唯一官方建議的自動化訓練入口\
 
     本專案由 retrain.sh 呼叫此 API。
 
-**3. 查詢任務列表（Jobs）**
+**3. 查詢任務列表（Jobs）**\
 API Endpoint
 ```bash
 GET /{PROJECT_ID}/jobs
@@ -95,17 +95,17 @@ _Response 範例_
 }
 ```
 _說明_
->Edge Impulse 不提供穩定的單一 job status API
->正確做法是輪詢 /jobs 清單
->依 categoryKey 判斷訓練是否仍存在
->任務消失即代表訓練完成或失敗
+>Edge Impulse 不提供穩定的單一 job status API\
+>正確做法是輪詢 /jobs 清單\
+>依 categoryKey 判斷訓練是否仍存在\
+>任務消失即代表訓練完成或失敗\
 
     本專案由 watch_training.sh 監控此 API。
 
-**4. 下載最新模型（Deployment / Update）**
-_說明_
-Edge Impulse 不支援直接用 REST API 下載 .eim 模型檔。
-正確且官方支援方式為使用 edge-impulse-linux-runner。
+**4. 下載最新模型（Deployment / Update）**\
+_說明_\
+Edge Impulse 不支援直接用 REST API 下載 .eim 模型檔。\
+正確且官方支援方式為使用 edge-impulse-linux-runner。\
 
 官方下載方式（建議）
 ```bash
