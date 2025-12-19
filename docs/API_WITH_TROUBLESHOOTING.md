@@ -1,4 +1,4 @@
-# API.md - Edge Impulse API 使用說明
+# API_WITH_TROUBLESHOOTING.md - Edge Impulse API 使用說明
 
 本文件說明本專案中實際使用到的 **Edge Impulse REST API**，並解釋各 API 在 ML Pipeline 中的角色、呼叫方式與回傳格式。本專案僅使用官方且穩定的 API，不依賴 Web UI 操作。
 
