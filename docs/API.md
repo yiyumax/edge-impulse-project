@@ -128,27 +128,30 @@ chmod +x models/model.eim
 ### 常見 API 錯誤說明
 **1. Cannot GET / Cannot POST**\
     原因：\
-        URL 錯誤\
-        PROJECT_ID 錯誤\
-        使用了不存在的 API 路徑\
+        - URL 錯誤\
+        - PROJECT_ID 錯誤\
+        - 使用了不存在的 API 路徑
+        
     解法：\
-        確認 API 路徑是否存在於本文件\
-        確認 PROJECT_ID 是否正確
+        - 確認 API 路徑是否存在於本文件\
+        - 確認 PROJECT_ID 是否正確
 
 **2. Not updated configuration. No settable property found**\
     原因：\
-        嘗試使用 /jobs/train/keras/{id} 等非公開 API\
+        - 嘗試使用 /jobs/train/keras/{id} 等非公開 API
+        
     解法：\
-        一律使用 /jobs/retrain\
-        不指定 learning block ID
+        - 一律使用 /jobs/retrain\
+        - 不指定 learning block ID
 
 **3. API 回傳 HTML 而非 JSON**\
     原因：\
-        API 路徑不存在\
-        Edge Impulse 回傳錯誤頁面\
+        - API 路徑不存在\
+        - Edge Impulse 回傳錯誤頁面
+        
     解法：\
-        使用 /jobs 檢查是否為合法 endpoint\
-        不使用未列於本文件的 API
+        - 使用 /jobs 檢查是否為合法 endpoint\
+        - 不使用未列於本文件的 API
 
 ###  設計原則
     >僅使用官方穩定 API
