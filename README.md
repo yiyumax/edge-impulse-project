@@ -48,7 +48,7 @@ edge_impulse_demo/\
 並設定以下環境變數：
 
 ```bash
-    export EI_API_KEY=ei_xxxxxxxxx\
+    export EI_API_KEY=ei_xxxxxxxxx
     export PROJECT_ID=123456
 ```
 ---
@@ -56,7 +56,7 @@ edge_impulse_demo/\
 ### 2. 啟動主控腳本
 
 ```bash
-    chmod +x scripts/*.sh\
+    chmod +x scripts/*.sh
     ./scripts/ml_pipeline.sh
 ```
 ---
