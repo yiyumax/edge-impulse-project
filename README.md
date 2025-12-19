@@ -47,16 +47,18 @@ edge_impulse_demo/\
 請先依照 docs/SETUP.md 完成所有必要工具與套件的安裝， 
 並設定以下環境變數：
 
-export EI_API_KEY=ei_xxxxxxxxx 
-export PROJECT_ID=123456
-
+```bash
+    export EI_API_KEY=ei_xxxxxxxxx\
+    export PROJECT_ID=123456
+```
 ---
 
 ### 2. 啟動主控腳本
 
-chmod +x scripts/*.sh 
-./scripts/ml_pipeline.sh
-
+```bash
+    chmod +x scripts/*.sh\
+    ./scripts/ml_pipeline.sh
+```
 ---
 
 ## Pipeline Steps 說明
@@ -71,11 +73,12 @@ chmod +x scripts/*.sh
 
 ## 模型權限設定（重要）
 
-下載完成的 .eim 模型在 Linux 環境中必須具有 executable 權限，  
+下載完成的 .eim 模型在 Linux 環境中必須具有 executable 權限， 
 否則在使用 edge-impulse-linux-runner 或 Python runner 時將無法載入模型。
 
-chmod +x models/model.eim
-
+```bash
+    chmod +x models/model.eim
+```
 注意：update.sh 已在下載完成後自動設定模型執行權限。
 
 ---
