@@ -198,7 +198,7 @@ inference_test() {
 
   local base
   base="$(basename "$img")"
-  local expected="${ROOT_DIR}/results/${base%.*}_detected.jpg"
+  local expected="${ROOT_DIR}/results/detected/${base%.*}_detected.jpg"
   rm -f "$expected" >/dev/null 2>&1 || true
 
   log_info "使用測試圖片：$img"
