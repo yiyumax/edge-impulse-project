@@ -10,7 +10,7 @@ sleep 3
 echo ""
 echo "步驟2:執行推論"
 sleep 1
-./run_test.sh data/test/demo.jpg
+./run_test.sh ../data/test/demo.jpg
 sleep 5
 echo ""
 echo "展示完成"
