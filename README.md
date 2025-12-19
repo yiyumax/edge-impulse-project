@@ -33,6 +33,9 @@ edge_impulse_demo/\
 │  ├─ API.md\
 │  ├─ ARCHITECTURE.md\
 │  └─ TROUBLESHOOTING.md\
+├─ logs/\
+├─ data/\
+├─ results/\
 └─ README.md
 
 ---
