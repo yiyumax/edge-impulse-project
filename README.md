@@ -20,23 +20,23 @@
 
 ## 專案結構
 
-edge_impulse_demo/
-├─ scripts/
-│  ├─ check_env.sh
-│  ├─ upload_data.sh
-│  ├─ retrain.sh
-│  ├─ watch_training.sh
-│  ├─ update.sh
-│  └─ ml_pipeline.sh
-├─ models/
-│  └─ model.eim
-├─ docs/
-│  ├─ SETUP.md
-│  ├─ USAGE.md
-│  ├─ API.md
-│  ├─ ARCHITECTURE.md
-│  └─ TROUBLESHOOTING.md
-└─ README.md
+edge_impulse_demo/\
+├─ scripts/\
+│  ├─ check_env.sh\
+│  ├─ upload_data.sh\
+│  ├─ retrain.sh\
+│  ├─ watch_training.sh\
+│  ├─ update.sh\
+│  └─ ml_pipeline.sh\
+├─ models/\
+│  └─ model.eim\
+├─ docs/\
+│  ├─ SETUP.md\
+│  ├─ USAGE.md\
+│  ├─ API.md\
+│  ├─ ARCHITECTURE.md\
+│  └─ TROUBLESHOOTING.md\
+└─ README.md\
 
 ---
 
@@ -44,27 +44,27 @@ edge_impulse_demo/
 
 ### 1. 環境設定
 
-請先依照 docs/SETUP.md 完成所有必要工具與套件的安裝，  
+請先依照 docs/SETUP.md 完成所有必要工具與套件的安裝， 
 並設定以下環境變數：
 
-export EI_API_KEY=ei_xxxxxxxxx  
+export EI_API_KEY=ei_xxxxxxxxx 
 export PROJECT_ID=123456
 
 ---
 
 ### 2. 啟動主控腳本
 
-chmod +x scripts/*.sh  
+chmod +x scripts/*.sh 
 ./scripts/ml_pipeline.sh
 
 ---
 
 ## Pipeline Steps 說明
 
-1. 檢查環境設定  
-2. 上傳新訓練資料  
-3. 觸發模型訓練  
-4. 更新本地模型（update）  
+1. 檢查環境設定 
+2. 上傳新訓練資料 
+3. 觸發模型訓練 
+4. 更新本地模型（update） 
 5. 完整流程（2 → 3 → 4）
 
 ---
