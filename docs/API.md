@@ -56,10 +56,12 @@ Content-Type: application/json
 ```
 
 _Request Body_
-```{}
+```
+{}
 ```
 _Response 範例（成功）_
-```{
+```
+{
   "success": true,
   "id": 41900414
 }
@@ -81,7 +83,8 @@ _完整 URL 範例_
 https://studio.edgeimpulse.com/v1/api/123456/jobs
 ```
 _Response 範例_
-```{
+```
+{
   "success": true,
   "jobs": [
     {
@@ -130,14 +133,14 @@ chmod +x models/model.eim
         使用了不存在的 API 路徑\
     解法：\
         確認 API 路徑是否存在於本文件\
-        確認 PROJECT_ID 是否正確\
+        確認 PROJECT_ID 是否正確
 
 **2. Not updated configuration. No settable property found**\
     原因：\
         嘗試使用 /jobs/train/keras/{id} 等非公開 API\
     解法：\
         一律使用 /jobs/retrain\
-        不指定 learning block ID\
+        不指定 learning block ID
 
 **3. API 回傳 HTML 而非 JSON**\
     原因：\
@@ -145,7 +148,7 @@ chmod +x models/model.eim
         Edge Impulse 回傳錯誤頁面\
     解法：\
         使用 /jobs 檢查是否為合法 endpoint\
-        不使用未列於本文件的 API\
+        不使用未列於本文件的 API
 
 ###  設計原則
     >僅使用官方穩定 API
