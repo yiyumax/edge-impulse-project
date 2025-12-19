@@ -99,6 +99,7 @@ def main():
         # --------------------------------------------------
         # ① 如果第二個參數是「資料夾」，就批次處理裡面的 jpg/jpeg/png
         # --------------------------------------------------
+        out_dir = "../results/detected"
         if os.path.isdir(target_path):
             image_files = []
             image_files += glob.glob(os.path.join(target_path, "*.jpg"))
@@ -119,7 +120,6 @@ def main():
                 if "bounding_boxes" in result["result"]:
                     base = os.path.basename(img_path)
                     name, ext = os.path.splitext(base)
-                    out_dir = "results"
                     save_path = os.path.join(out_dir, f"{name}_detected{ext}")
                     draw_bounding_boxes(
                         orig_img,
@@ -141,7 +141,6 @@ def main():
             if "bounding_boxes" in result["result"]:
                 base = os.path.basename(target_path)
                 name, ext = os.path.splitext(base)
-                out_dir = "results"
                 save_path = os.path.join(out_dir, f"{name}_detected{ext}")
                 draw_bounding_boxes(
                     orig_img,
