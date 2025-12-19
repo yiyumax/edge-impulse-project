@@ -24,9 +24,9 @@ Git 為避免直接覆蓋他人內容，因此拒絕 push。
 ### 解決方式（建議流程）
 
 1. **先備份本地資料**
-   ```bash
-   cp -r edge_impulse_demo edge_impulse_demo_backup
-   ```
+```bash
+cp -r edge_impulse_demo edge_impulse_demo_backup
+```
 2. **同步遠端最新版本**
 
 ```bash
