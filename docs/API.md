@@ -141,7 +141,7 @@ chmod +x models/model.eim
         - 嘗試使用 /jobs/train/keras/{id} 等非公開 API
         
     解法：
-        - 一律使用 /jobs/retrain\
+        - 一律使用 /jobs/retrain
         - 不指定 learning block ID
 
 **3. API 回傳 HTML 而非 JSON**\
