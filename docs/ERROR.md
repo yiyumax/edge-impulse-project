@@ -47,13 +47,13 @@ CLI 行為與官方文件不一致
 
 ### 問題原因
 Edge Impulse 在版本更新後，CLI 工具已拆分為多個獨立指令：
-
+```
 edge-impulse-uploader
 
 edge-impulse-linux-runner
 
 edge-impulse-daemon
-
+```
 大量網路教學仍使用舊版 ei 指令，導致混淆。
 
 ### 解決方式
