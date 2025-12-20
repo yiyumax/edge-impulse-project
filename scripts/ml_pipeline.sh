@@ -8,6 +8,7 @@ UPLOAD_DATA="$SCRIPT_DIR/upload_data.sh"
 RETRAIN="$SCRIPT_DIR/retrain.sh"
 WATCH_TRAINING="$SCRIPT_DIR/watch_training.sh"
 update="$SCRIPT_DIR/update.sh"
+run_test="$SCRIPT_DIR/run_test.sh"
 
 pause () {
   echo
@@ -60,8 +61,9 @@ while true; do
       pause
       ;;
     4)
-      echo "下載最新模型並準備推論..."
-      "$updata	"
+      echo "下載最新模型並推論..."
+      "$update"
+      "$run_test" "../data/test"
       pause
       ;;
     5)
@@ -71,7 +73,8 @@ while true; do
       JOB_ID=$("$RETRAIN")
       echo "Retrain job id: $JOB_ID"
       "$WATCH_TRAINING" "$JOB_ID"
-      "$updata"
+      "$update"
+      "$run_test" "../data/test"
       pause
       ;;
     0)
