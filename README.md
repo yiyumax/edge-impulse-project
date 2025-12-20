@@ -19,23 +19,32 @@
 
 edge_impulse_demo/\
 ├─ scripts/\
+│  ├─ mix.py\
+│  ├─ run_test.sh\
 │  ├─ check_env.sh\
 │  ├─ upload_data.sh\
 │  ├─ retrain.sh\
 │  ├─ watch_training.sh\
 │  ├─ update.sh\
+│  ├─ stats.sh\
+│  ├─ test_all.sh\
+│  ├─ demo.sh\
 │  └─ ml_pipeline.sh\
 ├─ models/\
 │  └─ model.eim\
 ├─ docs/\
 │  ├─ SETUP.md\
 │  ├─ USAGE.md\
-│  ├─ API.md\
+│  ├─ API_WITH_TROUBLESHOOTING.md\
 │  ├─ ARCHITECTURE.md\
-│  └─ TROUBLESHOOTING.md\
+│  └─ ERROR.md\
 ├─ logs/\
 ├─ data/\
+│  ├─ train/\
+│  ├─ test/\
+│  └─ new_data/\
 ├─ results/\
+│  └─ detected/\
 └─ README.md
 
 ---
