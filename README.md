@@ -43,7 +43,7 @@ edge_impulse_demo/\
 │  ├─ train/\
 │  ├─ test/\
 │  └─ new_data/\
-├─ results/\.gitignore
+├─ results/\
 │  └─ detected/\
 ├─ .gitignore\
 └─ README.md
