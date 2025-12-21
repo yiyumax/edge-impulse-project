@@ -44,7 +44,7 @@ while true; do
       echo "上傳新訓練資料..."
       echo
       read -p "請輸入資料標籤（label）: " LABEL
-      read -p "請輸入圖片路徑（可使用萬用字元，例如 data/upload_test/coffee*.jpg）: " IMAGE_PATH
+      read -p "請輸入圖片路徑（可使用萬用字元，例如 data/new_data/coffee*.jpg）: " IMAGE_PATH
       if [ -z "$LABEL" ] || [ -z "$IMAGE_PATH" ]; then
         echo "ERROR: label 或 image path 不可為空"
         pause

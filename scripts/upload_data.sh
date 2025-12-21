@@ -24,7 +24,7 @@ fi
 # 用法：upload_data.sh <label> <image1> [image2 ...]
 if [ $# -lt 2 ]; then
   log_error "參數不足！用法：$0 <label> <image1> [image2 ...]"
-  log_info  "範例：$0 coffee data/upload_test/coffee*.jpg"
+  log_info  "範例：$0 coffee data/new_data/coffee*.jpg"
   exit 1
 fi
 
@@ -44,7 +44,7 @@ done
 LOG_DIR="logs"
 mkdir -p "$LOG_DIR"
 TS=$(date +"%Y%m%d_%H%M%S")
-LOG_FILE="$LOG_DIR/upload_${LABEL}_${TS}.log"
+LOG_FILE="../$LOG_DIR/upload_${LABEL}_${TS}.log"
 
 log_info "開始上傳：label=${LABEL}，類別固定為 training"
 log_info "圖片數量：${#IMAGES[@]}"
